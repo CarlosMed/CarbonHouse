@@ -13,9 +13,34 @@
   &__top,
   &__bottom {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__top {
+    .social {
+    }
+    h3 {
+      font-family: $Oswald;
+      color: $pink;
+      letter-spacing: 1.2px;
+    }
+    form {
+      background: $gray;
+      border-radius: 20px;
+      padding: 5px 20px;
+      width: 367px;
+      input[type="text"] {
+        border: 1px solid $gray;
+        background: $gray;
+        border-radius: 20px;
+        width: 89%;
+      }
+      button {
+        border: none;
+        color: $darkGray;
+      }
+    }
     @media screen and (max-width: 960px) {
       display: none;
     }
@@ -26,7 +51,7 @@
     justify-content: space-between;
     align-items: center;
     height: 66px;
-    padding: 0 10px;
+    padding: 0 5px;
     background: $black;
     color: $white;
 
@@ -76,5 +101,6 @@
 .navbar {
   &__hamburger {
     cursor: pointer;
+    padding-right: 5px;
   }
 }

@@ -32,6 +32,8 @@
   &__info {
     flex-grow: 2;
     align-self: stretch;
+    margin-left: 10px;
+    word-wrap: break-word;
 
     h3 {
       color: $pink;
@@ -45,6 +47,7 @@
       font-size: 12px;
       letter-spacing: 1.1px;
       text-transform: capitalize;
+      height: 100%;
     }
   }
   &__date {

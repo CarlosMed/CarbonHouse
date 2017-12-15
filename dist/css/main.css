@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Merriweather|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Lato|Merriweather|Oswald:300,400");
 .bar {
   border: 1px solid white;
   width: 32px;
@@ -22,7 +22,34 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .nav__top h3 {
+    font-family: "Oswald", sans-serif;
+    color: #d345e8;
+    letter-spacing: 1.2px; }
+  .nav__top form {
+    background: #f5f5f5;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    padding: 5px 20px;
+    width: 367px; }
+    .nav__top form input[type="text"] {
+      border: 1px solid #f5f5f5;
+      background: #f5f5f5;
+      -webkit-border-radius: 20px;
+              border-radius: 20px;
+      width: 89%; }
+    .nav__top form button {
+      border: none;
+      color: #2e2e2e; }
   @media screen and (max-width: 960px) {
     .nav__top {
       display: none; } }
@@ -40,7 +67,7 @@
         -ms-flex-align: center;
             align-items: center;
     height: 66px;
-    padding: 0 10px;
+    padding: 0 5px;
     background: #000;
     color: white; }
     @media screen and (max-width: 960px) {
@@ -87,10 +114,11 @@
             transform: rotate(55deg); }
 
 .navbar__hamburger {
-  cursor: pointer; }
+  cursor: pointer;
+  padding-right: 5px; }
 
 .upcoming {
-  background: #e5e5e5;
+  background: #f5f5f5;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase; }
   .upcoming h2 {
@@ -139,7 +167,9 @@
   -webkit-align-self: stretch;
       -ms-flex-item-align: stretch;
               -ms-grid-row-align: stretch;
-          align-self: stretch; }
+          align-self: stretch;
+  margin-left: 10px;
+  word-wrap: break-word; }
   .event__info h3 {
     color: #d345e8;
     margin-bottom: 6px;
@@ -150,7 +180,8 @@
     margin-top: 0;
     font-size: 12px;
     letter-spacing: 1.1px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    height: 100%; }
 
 .event__date {
   display: -webkit-box;
@@ -280,7 +311,8 @@
   letter-spacing: 1.2px;
   margin: 0;
   font-size: 1em;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+  padding: 0 20px; }
 
 .newsletter__wrapper button {
   width: 80%;
@@ -289,3 +321,167 @@
   color: white;
   letter-spacing: 1.2px;
   margin-top: 20px; }
+
+.social {
+  margin: 0 10px; }
+  .social__title {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-top: 40px;
+    margin-bottom: 0; }
+  .social__subtitle {
+    font-family: "Merriweather", serif;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    color: #d345e8;
+    margin-top: 5px; }
+  .social__box {
+    border-top: 4px solid #000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px; }
+  .social__streams {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    background: #f5f5f5;
+    height: 400px; }
+
+.box__selector {
+  color: white;
+  font-size: 1.4em;
+  background: #000;
+  height: 56px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 1px; }
+
+.stream__follow {
+  letter-spacing: 1.2px;
+  padding: 20px 30px;
+  margin: 0; }
+
+.stream__social-handler {
+  color: #d345e8; }
+
+.stream__stream {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid salmon;
+  width: 100%;
+  overflow-x: scroll; }
+
+.stream__wrapper {
+  overflow-x: scroll;
+  margin: 0 20px;
+  background: white;
+  height: 300px;
+  width: 400px; }
+  .stream__wrapper h2 {
+    padding-left: 20px; }
+    .stream__wrapper h2 i {
+      color: #d345e8;
+      font-size: 1.2em; }
+    .stream__wrapper h2 span {
+      color: #000; }
+  .stream__wrapper p {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6em;
+    padding: 0 20px;
+    font-weight: lighter;
+    text-transform: none;
+    margin: 0; }
+
+.at {
+  font-size: 0.8em; }
+
+.active {
+  position: relative;
+  overflow: hidden;
+  height: 64px;
+  font-size: 2em; }
+  .active i {
+    z-index: 1; }
+  .active:before, .active:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    display: block; }
+  .active:before {
+    border-bottom: 120px solid #de53f3;
+    border-right: 254px solid #d345e8; }
+
+.direction {
+  margin: 0 10px; }
+  .direction__title {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-top: 40px;
+    margin-bottom: 0; }
+  .direction__subtitle {
+    font-family: "Merriweather", serif;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    color: #d345e8;
+    margin-top: 5px; }
+  .direction__address {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #000;
+    color: white; }
+    .direction__address h2 {
+      font-family: "Oswald", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 0; }
+    .direction__address p {
+      font-family: "Oswald", sans-serif;
+      font-weight: lighter;
+      text-align: center;
+      font-size: 1.3em;
+      margin-top: 10px;
+      padding: 0 40px; }
+    .direction__address .direction__map {
+      background: #f5f5f5;
+      width: 100%;
+      height: 300px;
+      padding: 20px 20px; }
