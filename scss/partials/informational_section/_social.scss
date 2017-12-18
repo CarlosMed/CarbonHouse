@@ -60,7 +60,6 @@
   &__stream {
     display: flex;
     flex-direction: row;
-    border: 1px solid salmon;
     width: 100%;
     overflow-x: scroll;
   }
@@ -112,7 +111,7 @@
   &:before,
   &:after {
     content: '';
-    width: 0;
+    width: 100%;
     height: 0;
     position: absolute;
     display: block;

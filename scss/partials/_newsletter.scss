@@ -1,5 +1,6 @@
 .newsletter {
   background: url('https://source.unsplash.com/collection/572418') center no-repeat;
+  background-size: cover;
   height: 600px;
   display: flex;
   align-items: center;
@@ -55,5 +56,20 @@
     color: white;
     letter-spacing: 1.2px;
     margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .newsletter {
+    &__wrapper {
+      height: 60%;
+      width: 75%;
+      button {
+        margin-top: 40px;
+        max-width: 30%;
+        height: 80px;
+        font-size: 1.3em;
+      }
+    }
   }
 }

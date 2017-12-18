@@ -5,13 +5,13 @@ var plumber = require('gulp-plumber')
 var autoprefixer = require('gulp-autoprefixer')
 
 // Static Server + watching scss/html files
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'js'], function() {
   browserSync.init({
     server: './dist'
   })
 
   gulp.watch('./scss/**/*.scss', ['sass'])
-  gulp.watch('./dist/*.html').on('change', browserSync.reload)
+  gulp.watch(['./dist/*.html', './dist/js/*.js']).on('change', browserSync.reload)
 })
 
 gulp.task('plumber', ['sass'], function() {
@@ -35,6 +35,13 @@ gulp.task('sass', function() {
       })
     )
     .pipe(gulp.dest('./dist/css'))
+    .pipe(browserSync.stream())
+})
+
+gulp.task('js', function() {
+  return gulp
+    .src('./js/**/*.js')
+    .pipe(gulp.dest('./dist/js'))
     .pipe(browserSync.stream())
 })
 

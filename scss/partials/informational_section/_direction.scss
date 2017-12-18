@@ -1,5 +1,6 @@
 .direction {
   margin: 0 10px;
+  flex-grow: 400px;
 
   &__title {
     font-family: $Oswald;
@@ -25,6 +26,7 @@
     justify-content: center;
     background: $black;
     color: $white;
+    text-align: center;
 
     h2 {
       font-family: $Oswald;
