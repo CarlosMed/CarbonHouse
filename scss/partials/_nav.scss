@@ -68,6 +68,13 @@
     justify-content: space-around;
     max-width: 200px;
 
+    a {
+      color: $darkGray;
+
+      &:hover {
+        color: $pink;
+      }
+    }
     .fa {
       font-size: 1.4em;
     }
@@ -94,6 +101,10 @@
     }
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .login {
     background: $pink;
     display: flex;
@@ -102,6 +113,10 @@
     width: 200px;
     height: 100%;
     margin-left: 20px;
+
+    &:hover {
+      background: hsl(292, 78%, 38%);
+    }
 
     h3,
     i {
@@ -175,10 +190,6 @@
 
     li {
       width: 100%;
-
-      &:hover {
-        color: $pink;
-      }
     }
     .selected {
       color: $pink;
@@ -207,6 +218,12 @@
   .navbar__links {
     ul {
       display: flex;
+
+      li {
+        &:hover {
+        color: $pink;
+        }
+      }
     }
   }
 
