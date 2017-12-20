@@ -98,15 +98,15 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: #f5f5f5;
+  background: #e5e5e5;
   -webkit-border-radius: 20px;
           border-radius: 20px;
   padding: 5px 20px;
   width: 367px;
   margin-left: 30px; }
   .nav__top form input[type='text'] {
-    border: 1px solid #f5f5f5;
-    background: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    background: #e5e5e5;
     -webkit-border-radius: 20px;
             border-radius: 20px;
     width: 89%; }
@@ -222,6 +222,14 @@
     .open ul .selected {
       color: #d345e8; }
 
+.close {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  z-index: 4;
+  margin-right: 20px;
+  display: none;
+  cursor: pointer; }
+
 .navbar__hamburger {
   margin: 5px 5px;
   cursor: pointer; }
@@ -264,17 +272,10 @@
       height: 100px; } }
 
 .upcoming {
-  background: #f5f5f5;
+  background: #e5e5e5;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   padding-bottom: 50px; }
-  .upcoming h2 {
-    margin: 0 10px 20px 10px;
-    text-align: center;
-    border-bottom: 2px solid #000;
-    font-size: 1.5em;
-    line-height: 70px;
-    letter-spacing: 2.5px; }
   .upcoming__event {
     display: -webkit-box;
     display: -webkit-flex;
@@ -304,14 +305,35 @@
     transition: -webkit-transform 200ms ease-in;
     transition: transform 200ms ease-in;
     transition: transform 200ms ease-in, -webkit-transform 200ms ease-in; }
+  .upcoming__title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px solid #000;
+    margin: 0 1% 40px 1%; }
+    .upcoming__title h2 {
+      text-align: center;
+      font-size: 1.5em;
+      line-height: 40px;
+      letter-spacing: 2.5px;
+      width: 100%; }
+    .upcoming__title .icons {
+      display: none; }
 
 .event__img {
-  background: url("https://source.unsplash.com/collection/1112424") center no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 100px;
   width: 100px;
-  margin: 5px 5px;
-  position: relative; }
+  margin: 5px 5px; }
 
 .event__info {
   -webkit-box-flex: 2;
@@ -458,6 +480,10 @@
       top: 0;
       right: 0; } }
 
+.icon-select {
+  color: #d345e8;
+  background: white; }
+
 @media screen and (min-width: 960px) {
   .wrapper {
     display: -webkit-box;
@@ -475,6 +501,35 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .upcoming__title h2 {
+    width: auto; }
+  .upcoming__title .icons {
+    display: initial;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .upcoming__title .icons svg {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      margin-right: 6px; }
+    .upcoming__title .icons i {
+      height: 40px;
+      width: 40px;
+      font-size: 1.8em;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .row {
     width: -webkit-calc(96%/3);
     width: calc(96%/3);
@@ -644,7 +699,7 @@
       margin-top: 10px;
       padding: 0 40px; }
     .direction__address .direction__map {
-      background: #f5f5f5;
+      background: #e5e5e5;
       width: 100%;
       height: 300px;
       padding: 20px 20px; }
@@ -674,7 +729,7 @@
   .social__streams {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
-    background: #f5f5f5;
+    background: #e5e5e5;
     height: 400px; }
 
 .box__selector {

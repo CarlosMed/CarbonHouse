@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "carbonhouse",
   "version": "1.0.0",
-  "description": "Personal Portfolio",
+  "description": "Carbonhouse code test",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/carlosmed/portfolio.git"
+    "url": "git+https://github.com/carlosmed/CarbonHouse.git"
   },
   "keywords": [
     "portfolio"
@@ -17,9 +17,9 @@
   "author": "Carlos Medina <carlos.w.med@gmail.com> (http://carlos-medina.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/carlosmed/portfolio/issues"
+    "url": "https://github.com/carlosmed/CarbonHouse/issues"
   },
-  "homepage": "https://github.com/carlosmed/portfolio#readme",
+  "homepage": "https://github.com/carlosmed/CarbonHouse#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
