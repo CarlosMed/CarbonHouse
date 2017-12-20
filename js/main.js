@@ -57,7 +57,7 @@ function $(selection) {
       let { name, imgName, tour, date, day } = artistInfo;
 
       let layout = `<div class="upcoming__event row">
-          <div class="event__img" style="background: url('../img/${imgName}.jpg') center no-repeat;" alt="${name}" ></div>
+          <div class="event__img" style="background: url('./../img/${imgName}.jpg') center no-repeat;" alt="${name}" ></div>
           <div class="event__info">
               <h3 class="info__artist">${name}</h3>
               <h4 class="info__tour">${tour}</h4>
