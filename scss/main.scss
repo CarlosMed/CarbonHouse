@@ -1,10 +1,117 @@
 // Modules
 @import 'modules/_colors';
 @import 'modules/_fonts';
-@import 'modules/_upcoming-card';
 
 // Partials
 @import 'partials/_nav';
-@import 'partials/_upcoming-list';
-@import 'partials/_newsletter';
-@import 'partials/informational_section/_main.scss';
+@import 'partials/_header';
+@import 'partials/_video';
+@import 'partials/_info';
+@import 'partials/_signup2';
+@import 'partials/_resources';
+@import 'partials/_footer';
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+object {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+input[type='checkbox'] {
+  vertical-align: bottom;
+}
+
+strong {
+  font-weight: bold;
+}
+
+label,
+input[type='file'] {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  border: 0;
+  margin: 0;
+}
+
+button,
+input[type='button'],
+input[type='submit'] {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 630px) {
+  .main {
+    flex-direction: row;
+  }
+}
